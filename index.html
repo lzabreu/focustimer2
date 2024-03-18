@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="Temporizador estilo pomodoro" />
+		<title>Focus Timer 2.0</title>
+
+		<link rel="shortcut icon" href="./assets/favicon.svg" type="image/x-svg" />
+		<script src="https://unpkg.com/@phosphor-icons/web"></script>
+		<link rel="stylesheet" href="./style.css" />
+		<script type="module" src="./src/main.js" defer></script>
+	</head>
+	<body>
+		<div id="app">
+			<div class="section1">
+				<section id="timer" class="flex">
+					<span id="minutes">25</span>
+					<span>:</span>
+					<span id="seconds">00</span>
+				</section>
+				
+				<section id="controls" class="flex">
+					<button class="ph ph-play-circle" data-action="toggleRunning">
+						<span class="sr-only">Iniciar contador</span>
+					</button>
+					<button class="ph ph-stop-circle" data-action="reset">
+						<span class="sr-only">Reiniciar contador</span>
+					</button>
+					<button class="ph ph-plus-circle" data-action="plusFive">
+						<span class="sr-only">Iniciar música</span>
+					</button>
+					<button class="ph ph-minus-circle" data-action="minusFive">
+						<span class="sr-only">Parar música</span>
+					</button>
+				</section>
+			</div>
+				<section id="sounds">
+					<button class="ph ph-tree" data-action="SoundForest" id="SoundForest">
+						<span class="sr-only">Som de Floresta</span>
+					</button>
+					<button class="ph ph-cloud-snow" data-action="SoundRain" id="SoundRain">
+						<span class="sr-only">Som de Chuva</span>
+					</button>
+				<button class="ph ph-storefront" data-action="SoundCoffee" id="SoundCoffee">
+					<span class="sr-only">Som de Cofee Shop</span>
+				</button>
+				<button class="ph ph-fire" data-action="SoundFire" id="SoundFire">
+					<span class="sr-only">Som de Lareira</span>
+				</button>
+			</section>
+		</div>
+	</body>
+</html>
